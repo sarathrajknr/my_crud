@@ -1,0 +1,235 @@
+/* General Styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #7A8396;
+}
+
+/* Navbar */
+.custom-navbar {
+    background-color: #4A4E69 !important;
+    color: #E0AFA0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+    color: #E0AFA0 !important;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #ffffff !important;
+}
+
+.custom-navbar .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* Table Heading */
+.table-heading {
+    text-align: center;
+    margin-top: 80px; /* Adjust this value to create space below the navbar */
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #ffffff;
+    font-family: 'Verdana', sans-serif;
+    letter-spacing: 1px;
+    background-color: #4A4E69;
+    padding: 10px 0;
+    border-radius: 5px;
+    width: 80%;
+    margin: 80px auto 20px auto; /* Adjusted margin-top for spacing */
+}
+
+/* Welcome Box */
+.welcome-box {
+    background-color: #4A4E69;
+    color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 500px;
+    width: 80%;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.welcome-box h1 {
+    margin-bottom: 20px;
+}
+
+.welcome-box p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+    background-color: #4A4E69;
+    color: #E0AFA0;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Form Styles */
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-buttons .button {
+    width: 48%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #E0AFA0;
+    color: #333;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Remove underline from the link */
+}
+
+.form-buttons .button:hover {
+    background-color: #f5563b;
+}
+
+.form-buttons input.button {
+    appearance: none; /* Remove default styling of input */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.form-container {
+    background-color: #4A4E69;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #E0AFA0;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #E0AFA0;
+    font-family: 'Verdana', sans-serif;
+    letter-spacing: 1px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #f2f2f2;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 120%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.form-group input::placeholder {
+    color: #999;
+}
+
+/* Table Container */
+.table_container {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #4A4E69; /* Background color for the table container */
+    border: 1px solid #6C6F88; /* Border for the container */
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Ensures borders between cells are visible */
+    background-color: #4A4E69; /* Table background color */
+    color: #ffffff; /* Text color */
+}
+
+/* Table Headers */
+th {
+    background-color: #6C6F88; /* Header background color */
+    padding: 12px 15px;
+    font-weight: bold;
+    font-size: 16px;
+    border: 1px solid #4A4E69; /* Border for header cells */
+    text-align: center; /* Center align header text */
+}
+
+/* Table Rows */
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #6C6F88; /* Border for table rows */
+    border-right: 1px solid #6C6F88; /* Border for each column */
+}
+
+/* Last Column without Right Border */
+td:last-child {
+    border-right: 1px solid #6C6F88; /* Ensure right border for last column */
+}
+
+/* Table Row Hover Effect */
+tbody tr:hover {
+    background-color: #7A7D99; /* Row hover color */
+}
+
+/* Action Icons */
+td a {
+    color: #ffffff;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+td a:hover {
+    color: #E0AFA0; /* Icon hover color */
+}
+
+/* First Column (Sl No) Center Alignment */
+td:first-child {
+    text-align: center;
+    width: 50px; /* Adjust this width as needed */
+}
+
